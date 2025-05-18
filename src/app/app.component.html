@@ -13,9 +13,19 @@
 
 <main class="main">
   <div class="content">
-    <h1>Drone Delivery</h1>
+    <header>
+      <h1>Drone Delivery</h1>
+      <nav>
+        <ul>
+          <li><a href="/main" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a></li>
+          <li><a href="/user">User</a></li>
+          <li><a href="/op">Operator</a></li>
+          <li><a href="/map">Map</a></li>
+        </ul>
+      </nav>
+    </header>
+    
     <div class="changes">
-      <a routerLink="/main" routerLinkActive="active" ariaCurrentWhenActive="page"></a>
       <router-outlet />
     </div>
   </div>
@@ -28,6 +38,3 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
-
-
