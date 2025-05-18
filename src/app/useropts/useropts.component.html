@@ -1,1 +1,12 @@
-<p>useropts works!</p>
+<button (click)="view()">View Outstanding Orders</button>
+<button (click)="req()">Request Order Delivery</button>
+
+@if (viewOut) {
+    <p>Egg1</p>
+}
+
+@if (request) {
+    <p>Egg2</p>
+}
+
+<app-map></app-map>

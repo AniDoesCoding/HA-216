@@ -1,0 +1,27 @@
+What works:
+    - HQ
+    - Drone's distance from HQ, Delivery Point and Dust Devils;
+
+What doesn't:
+    - Routing (I though I had a solution. I didn't.)
+    - Anything that specifically required the API 
+
+What works in a convoluted way (and why):
+    - Drone's movement (you have to have your last click be on the button bound to the functions)
+    - Drone's battery (same as Dust Devils);
+    - Dust Devils (they only update every minute if you click on a button because ANY timer/interval broke the stupid arrays)
+    - The Map (sometimes it just goes blank and you might have to restart the app. absolute headache)
+
+What needs to be updated for the API's working:
+    - Login
+    - Customer Locations (it currently works for one delivery at a time, I can modify that if doing multiple at a time)
+
+What's left:
+    - CSS
+
+Routing pages [you can add the /whatever to the url to see the pages]:
+    - Main Page (contains intro and login) [/main]
+        -> Customer Page (contains useropts and map with is_op as false) [/user]
+
+        -> Operator Page (contains operopts) [/op]
+            -> Map Page (contains map with is_op as true) [/map]

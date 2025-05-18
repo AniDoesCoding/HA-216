@@ -1,4 +1,25 @@
 <div id="map" style="height: 600px;width: 600px;"></div>
-<div id="buttons">
-    <button (keydown.ArrowUp)="onUp()" (keydown.ArrowDown)="onDown()" (keydown.ArrowRight)="onRight()" (keydown.ArrowLeft)="onLeft()"></button>
+
+<div id="info">
+    <p>Current Altitude: {{ height }}m</p>
+    <p>Battery Level: {{ battery }}</p>
+    <p>Distance From HQ: {{ distance.toFixed(4) }}m</p>
+    <p>Distance From Delivery: {{ distDev.toFixed(4) }}m</p>
+    <p>{{ flightState }}</p>
+    <p>Current Operator: {{ current_operator_id }}</p>
+    <p>Available: {{ is_available }}</p>
+
 </div>
+
+<div id="buttons">
+    @if (is_op) {
+        <button (keydown.ArrowUp)="onUp()" (keydown.ArrowDown)="onDown()"
+        (keydown.ArrowRight)="onRight()" (keydown.ArrowLeft)="onLeft()"
+        (click)="setState()">Fix Flight</button>
+        
+        @if (deliverable) {
+            <button (click)="deliver()">Deliver</button>
+        }
+    }  
+</div>
+

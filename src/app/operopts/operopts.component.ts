@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   templateUrl: './operopts.component.html',
   styleUrl: './operopts.component.css'
 })
-export class OperoptsComponent {
 
+export class OperoptsComponent {
+  public droneDev() : void {
+    
+  }
 }

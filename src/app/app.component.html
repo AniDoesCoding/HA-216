@@ -13,13 +13,10 @@
 
 <main class="main">
   <div class="content">
-    <h1>Current Place</h1>
+    <h1>Drone Delivery</h1>
     <div class="changes">
-      <app-intro></app-intro>
-      <app-login></app-login>
-      <app-map></app-map>
-      <app-operopts></app-operopts>
-      <app-useropts></app-useropts>
+      <a routerLink="/main" routerLinkActive="active" ariaCurrentWhenActive="page"></a>
+      <router-outlet />
     </div>
   </div>
 </main>
@@ -33,4 +30,4 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 
-<router-outlet />
+
